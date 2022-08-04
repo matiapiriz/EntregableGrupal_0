@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
   let parrafos = document.getElementsByTagName("p");
   let enlacesTercerParrafo = parrafos[2].getElementsByTagName("a");
   info.appendChild(aTexto(`El tercer parrafo tiene: ${enlacesTercerParrafo.length} enlaces`));
+  addBr();
+
+  document.getElementById("info").innerHTML += "Dirección del primer enlace: " + numEnlaces[1] + "<br>";
+
 
 });
 
